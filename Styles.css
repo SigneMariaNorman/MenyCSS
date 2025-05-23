@@ -1,0 +1,47 @@
+body {
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+flex-direction: column;
+height: 100vh;
+margin: 0;
+background-color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 10px; 
+  max-width: 80vw;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.menu-item { 
+background-color: #DCDCDC;
+color: #696969;
+padding: 15px 40px;
+text-align: center;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+min-width: 200px;
+}
+
+/*.menu-item:hover {
+    background-color: white;
+} */
+
+.menu-item:first-child {
+    background-color: #696969;
+    color: #DCDCDC;
+    padding: 15px 40px;
+text-align: center;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+min-width: 200px;
+}
+/*
+.menu-item:first-child {
+    background-color: #FFA500; /* Bakgrundsfärg 
+    color: white; /* Textfärg */
+
