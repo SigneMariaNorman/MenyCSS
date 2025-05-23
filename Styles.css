@@ -1,9 +1,10 @@
 body {
 font-family: Arial, Helvetica, sans-serif;
-display: flex;
+display: flex; /* Nödvändigt för att kunna flexa resten av koden. */
 flex-direction: row; /* Var innan tvungen att ha column annars blev det inga rows och vice versa. Anledningen var en height: 100vh; som gjorde att raderna
 blev lika långa som höjden på sidan. */
-margin: 0;
+/*margin: 10; /* Ska skapa lite marginal. Av någon anledning behövs inte detta utan jag måste ha martgin:0 auto; i .menu för att det ska bli
+marginal. */
 background-color: white;
 }
 
