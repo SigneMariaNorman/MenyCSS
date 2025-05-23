@@ -1,34 +1,30 @@
 body {
 font-family: Arial, Helvetica, sans-serif;
 display: flex;
-flex-direction: column;
-height: 100vh;
+flex-direction: row; /* Var innan tvungen att ha column annars blev det inga rows och vice versa. Anledningen var en height: 100vh; som gjorde att raderna
+blev lika långa som höjden på sidan. */
 margin: 0;
 background-color: white;
 }
 
 .menu {
-    display: flex;
-    gap: 10px; 
-  max-width: 80vw;
-    justify-content: space-between;
-    margin: 0 auto;
+    display: flex; /* Enables flex-things for the rest of the code. */
+    gap: 10px; /* Mellanrummet mellan varje block. */
+  max-width: 80vw; /* Maximal bredd på blocket, kan dock vara mindre. */
+    justify-content: space-around; /* ska göra så att det är jämt mellan blocken men luft åt sidorna. */
+   margin: 0 auto;  /*margin: auto 0; gör just här att elementet centrerar sig. Funkar bara för att föräldern lägger sig till vänster.*/
 }
 
 .menu-item { 
 background-color: #DCDCDC;
 color: #696969;
-padding: 15px 40px;
-text-align: center;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-min-width: 200px;
+padding: 15px 40px; /* Skapar luft inne i elementet?   */
+text-align: center; /* centrerar texten i blocket.  */
+border-radius: 5px; /* Gör boxarnas kanter mjuka/rundade.  */
+cursor: pointer; /* Ska göra så att boxarna ser klickbara ut. Pilen blir till en hand när man för musen till dem. */
+transition: background-color 0.3s ease; /* Ska göra färgövergångarna mindre skarpa för att se mer "proffsiga" ut.   */
+min-width: 200px; /* Gör boxarna minst så breda så de inte kan bli mindre än så. */
 }
-
-/*.menu-item:hover {
-    background-color: white;
-} */
 
 .menu-item:first-child {
     background-color: #696969;
@@ -40,8 +36,5 @@ cursor: pointer;
 transition: background-color 0.3s ease;
 min-width: 200px;
 }
-/*
-.menu-item:first-child {
-    background-color: #FFA500; /* Bakgrundsfärg 
-    color: white; /* Textfärg */
+
 
